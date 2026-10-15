@@ -12,6 +12,7 @@ void test_strlen(void);
 void test_memcmp(void);
 void test_strcmp(void);
 void test_strncmp(void);
+void test_sprintf(void);
 
 int main(const char *args) {
   (void)args;
@@ -25,6 +26,7 @@ int main(const char *args) {
   test_memcmp();
   test_strcmp();
   test_strncmp();
+  test_sprintf();
   putstr("klib tests passed\n");
   return 0;
 }
