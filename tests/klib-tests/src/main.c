@@ -8,6 +8,10 @@ void test_memmove(void);
 void test_strcpy(void);
 void test_strncpy(void);
 void test_strcat(void);
+void test_strlen(void);
+void test_memcmp(void);
+void test_strcmp(void);
+void test_strncmp(void);
 
 int main(const char *args) {
   (void)args;
@@ -17,6 +21,10 @@ int main(const char *args) {
   test_strcpy();
   test_strncpy();
   test_strcat();
-  putstr("klib write tests passed\n");
+  test_strlen();
+  test_memcmp();
+  test_strcmp();
+  test_strncmp();
+  putstr("klib tests passed\n");
   return 0;
 }
